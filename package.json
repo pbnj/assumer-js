@@ -1,0 +1,31 @@
+{
+  "name": "assumer-js",
+  "version": "0.0.1",
+  "description": "Assume roles between AWS Control Plane accounts and Target accounts safely and securely",
+  "main": "src/assumer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devsecops/assumer-js.git"
+  },
+  "keywords": [
+    "assumer",
+    "assume",
+    "role",
+    "iam",
+    "sts",
+    "aws"
+  ],
+  "author": "Peter Benjamin <petermbenjamin@gmail.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/devsecops/assumer-js/issues"
+  },
+  "homepage": "https://github.com/devsecops/assumer-js#readme",
+  "dependencies": {
+    "aws-sdk": "^2.6.6",
+    "lodash": "^4.16.3"
+  }
+}
