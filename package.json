@@ -27,5 +27,12 @@
   "dependencies": {
     "aws-sdk": "^2.6.6",
     "lodash": "^4.16.3"
+  },
+  "devDependencies": {
+    "eslint": "^3.10.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.7.1"
   }
 }
