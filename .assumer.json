@@ -1,0 +1,23 @@
+{
+  "control": {
+    "account": {
+      "name": "control-account",
+      "number": "123456789012",
+      "role": "/prefix/role-name/"
+    }
+  },
+  "target": {
+    "accounts": [
+      {
+        "name": "target-account-1",
+        "number": "111111111111",
+        "role": "/prefix/role-name/"
+      },
+      {
+        "name": "target-account-2",
+        "number": "222222222222",
+        "role": "/prefix/role-name/"
+      }
+    ]
+  }
+}
