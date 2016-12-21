@@ -1,0 +1,26 @@
+{
+  "name": "assumer",
+  "version": "0.0.1",
+  "description": "Assume AWS roles between Control account and Target accounts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmbenjamin/assumer-js.git"
+  },
+  "keywords": [
+    "assume",
+    "assumer",
+    "aws",
+    "roles",
+    "iam"
+  ],
+  "author": "Peter Benjamin",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/pmbenjamin/assumer-js/issues"
+  },
+  "homepage": "https://github.com/pmbenjamin/assumer-js#readme"
+}
