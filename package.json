@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pmbenjamin/assumer-js.git"
+    "url": "git+https://github.com/devsecops/assumer-js.git"
   },
   "keywords": [
     "assume",
@@ -20,7 +20,7 @@
   "author": "Peter Benjamin",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
-    "url": "https://github.com/pmbenjamin/assumer-js/issues"
+    "url": "https://github.com/devsecops/assumer-js/issues"
   },
-  "homepage": "https://github.com/pmbenjamin/assumer-js#readme"
+  "homepage": "https://github.com/devsecops/assumer-js#readme"
 }
