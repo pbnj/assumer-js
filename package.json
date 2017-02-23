@@ -29,6 +29,6 @@
     "eslint-plugin-import": "^2.2.0"
   },
   "dependencies": {
-    "aws-sdk": "^2.9.0"
+    "aws-sdk": "^2.18.0"
   }
 }
