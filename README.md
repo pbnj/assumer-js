@@ -6,7 +6,7 @@
 ## Install
 
 ```
-npm install -g assumer
+npm install -s assumer
 ```
 
 ## Usage

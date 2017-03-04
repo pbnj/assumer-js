@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "Assume AWS IAM roles between Control account and Target accounts",
   "main": "index.js",
-  "bin": {
-    "assumer": "bin/cli.js"
-  },
   "scripts": {
     "test": "snyk test"
   },
@@ -38,6 +35,6 @@
     "snyk": "^1.25.1"
   },
   "dependencies": {
-    "aws-sdk": "^2.18.0"
+    "aws-sdk": "^2.22.0"
   }
 }
