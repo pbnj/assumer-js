@@ -1,10 +1,13 @@
 {
-  "name": "assumer-js",
+  "name": "assumer",
   "version": "0.0.1",
-  "description": "Assume roles between Control Plane and Target accounts in AWS",
-  "main": "src/index.js",
+  "description": "Assume AWS IAM roles between Control account and Target accounts",
+  "main": "index.js",
+  "bin": {
+    "assumer": "bin/cli.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "snyk test"
   },
   "repository": {
     "type": "git",
@@ -15,18 +18,24 @@
     "iam",
     "aws",
     "roles",
+    "iam-roles",
+    "assumer",
     "devsecops"
   ],
-  "author": "Peter Benjamin",
+  "author": {
+    "name": "Peter Benjamin",
+    "email": "petermbenjamin@gmail.com"
+  },
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
     "url": "https://github.com/devsecops/assumer-js/issues"
   },
   "homepage": "https://github.com/devsecops/assumer-js#readme",
   "devDependencies": {
-    "eslint": "^3.15.0",
-    "eslint-config-airbnb-base": "^11.0.1",
-    "eslint-plugin-import": "^2.2.0"
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb-base": "^11.1.1",
+    "eslint-plugin-import": "^2.2.0",
+    "snyk": "^1.25.1"
   },
   "dependencies": {
     "aws-sdk": "^2.18.0"

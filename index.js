@@ -3,21 +3,21 @@ const AWS = require('aws-sdk');
 /**
  * Assumes AWS IAM Roles in Control Account, then in Target Account
  * @param {object} opts - The opts for configuration
- * @param {string} opts.ctrlAcct - Control Account Number
- * @param {string} opts.ctrlRole - Control Account Role
- * @param {string} opts.trgtAcct - Target Account Number
- * @param {string} opts.trgtRole - Target Account Role
+ * @param {string} opts.controlAccount - Control Account Number
+ * @param {string} opts.controlRole - Control Account Role
+ * @param {string} opts.targetAccount - Target Account Number
+ * @param {string} opts.targetRole - Target Account Role
  * @param {string} opts.username - IAM username
  * @param {string} opts.mfaToken - MFA Token
  */
 module.exports = opts => new Promise((resolve, reject) => {
   if (typeof opts === 'undefined') reject(new Error('Must provide Control Account Number, Control Account Role, Target Account Number, and Target Account Role.'));
-  const { ctrlAcct, ctrlRole, trgtAcct, trgtRole, username, mfaToken } = opts;
+  const { controlAccount, controlRole, targetAccount, targetRole, username, mfaToken } = opts;
 
   const ctrlParams = {
-    RoleArn: `arn:aws:iam::${ctrlAcct}:role/${ctrlRole}`,
+    RoleArn: `arn:aws:iam::${controlAccount}:role/${controlRole}`,
     RoleSessionName: 'AssumedRole',
-    SerialNumber: `arn:aws:iam::${ctrlAcct}:mfa/${username}`,
+    SerialNumber: `arn:aws:iam::${controlAccount}:mfa/${username}`,
     TokenCode: `${mfaToken}`,
   };
   const ctrlSTS = new AWS.STS();
@@ -27,7 +27,7 @@ module.exports = opts => new Promise((resolve, reject) => {
     AWS.config.credentials = ctrlSTS.credentialsFrom(ctrlCreds);
 
     const trgtParams = {
-      RoleArn: `arn:aws:iam::${trgtAcct}:role/${trgtRole}`,
+      RoleArn: `arn:aws:iam::${targetAccount}:role/${targetRole}`,
       RoleSessionName: 'AssumedRole',
     };
 
