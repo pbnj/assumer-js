@@ -3,7 +3,7 @@
 
 [![NPM](https://nodei.co/npm/assumer.png?downloads=true)](https://nodei.co/npm/assumer/)
 
-[![Known Vulnerabilities](https://snyk.io/test/npm/assumer-cli/badge.svg?style=flat-square)](https://snyk.io/test/npm/assumer-cli)
+[![Known Vulnerabilities](https://snyk.io/test/npm/assumer-js/badge.svg?style=flat-square)](https://snyk.io/test/npm/assumer-js)
 
 ## Install
 
