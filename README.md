@@ -8,7 +8,7 @@
 ## Install
 
 ```
-npm install -s assumer
+npm install -S assumer
 ```
 
 ## Usage
@@ -28,3 +28,5 @@ assumer(data).then(creds => console.log(creds))
 // {AccessKeyId: ASIA..., SecretAccessKey: ..., SessionToken: ...}
 ```
 
+## TODO
+- [ ] Add tests
