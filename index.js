@@ -22,18 +22,20 @@ module.exports = opts => new Promise((resolve, reject) => {
   };
   const ctrlSTS = new AWS.STS();
   ctrlSTS.assumeRole(ctrlParams, (ctrErr, ctrlCreds) => {
-    if (ctrErr) reject(ctrErr);
+    if (ctrErr) {
+      reject(ctrErr);
+    } else {
+      AWS.config.credentials = ctrlSTS.credentialsFrom(ctrlCreds);
 
-    AWS.config.credentials = ctrlSTS.credentialsFrom(ctrlCreds);
+      const trgtParams = {
+        RoleArn: `arn:aws:iam::${targetAccount}:role/${targetRole}`,
+        RoleSessionName: 'AssumedRole',
+      };
 
-    const trgtParams = {
-      RoleArn: `arn:aws:iam::${targetAccount}:role/${targetRole}`,
-      RoleSessionName: 'AssumedRole',
-    };
-
-    new AWS.STS().assumeRole(trgtParams, (trgtErr, trgtCreds) => {
-      if (trgtErr) reject(trgtErr);
-      resolve(trgtCreds.Credentials);
-    });
+      new AWS.STS().assumeRole(trgtParams, (trgtErr, trgtCreds) => {
+        if (trgtErr) reject(trgtErr);
+        resolve(trgtCreds.Credentials);
+      });
+    }
   });
 });
