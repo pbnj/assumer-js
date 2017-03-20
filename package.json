@@ -1,6 +1,6 @@
 {
   "name": "assumer",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Assume AWS IAM roles between Control account and Target accounts",
   "main": "index.js",
   "scripts": {
