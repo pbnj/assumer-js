@@ -26,7 +26,7 @@
     "name": "Peter Benjamin",
     "email": "petermbenjamin@gmail.com"
   },
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/devsecops/assumer-js/issues"
   },
