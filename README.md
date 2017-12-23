@@ -1,4 +1,6 @@
 # assumer-js
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/petermbenjamin/assumer-js.svg)](https://greenkeeper.io/)
 > A JavaScript library for assuming AWS IAM roles between accounts.
 
 [![NPM](https://nodei.co/npm/assumer.png?downloads=true)](https://nodei.co/npm/assumer/)
