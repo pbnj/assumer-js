@@ -32,10 +32,10 @@
   },
   "homepage": "https://github.com/devsecops/assumer-js#readme",
   "devDependencies": {
-    "eslint": "^3.16.1",
-    "eslint-config-airbnb-base": "^11.1.1",
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.2.0",
-    "nsp": "^2.6.3",
+    "nsp": "^3.1.0",
     "snyk": "^1.25.2"
   },
   "dependencies": {
